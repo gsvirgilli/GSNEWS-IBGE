@@ -7,7 +7,7 @@ function Header() {
       <img className={ style.imag } src="" alt="logo gs news" />
       <h1 className={ style.gsnews }>GS NEWS</h1>
       <div>
-        <Link />
+        <Link to={''} />
         
       </div>
     </div>
