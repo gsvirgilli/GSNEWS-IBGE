@@ -20,22 +20,22 @@ export function AppProvider({ children }: ibgeProviderProps ) {
     fetchApi();
   }, []);
 
-  const addToFavorites = (item: ibgeType) => {
-    setFavorites((prevFavorites) => [...prevFavorites, item]);
-  };
+  const toggleFavorite = (item: ibgeType) => {
+    const isFavorite = favorites.some((favorite) => favorite.id === item.id);
 
-  const removeFromFavorites = (itemId: number) => {
-    setFavorites((prevFavorites) =>
-      prevFavorites.filter((item: ibgeType) => item.id !== itemId)
-    );
-  };
-
+    if (isFavorite) {
+      setFavorites((prevFavorites) =>
+        prevFavorites.filter((favorite) => favorite.id !== item.id)
+      );
+    } else {
+      setFavorites((prevFavorites) => [...prevFavorites, item]);
+    }
+  }
 
   const contextValue = {
     apiData,
     favorites,
-    addToFavorites,
-    removeFromFavorites,
+    toggleFavorite,
   };
 
   return (

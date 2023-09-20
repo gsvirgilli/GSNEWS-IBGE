@@ -16,6 +16,5 @@ export type ibgeType = {
 export type ibgeContext = {
   apiData: ibgeType[];
   favorites: ibgeType[];
-  addToFavorites: (item: ibgeType) => void;
-  removeFromFavorites: (itemId: number) => void;
+  toggleFavorite: (item: ibgeType) => void;
 };
