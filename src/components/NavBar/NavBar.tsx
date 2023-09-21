@@ -6,8 +6,8 @@ function NavBar() {
     <header className={styles.header}> 
       <nav className={styles.nav}> 
         <Link
-          to="/recentes"
-          className={styles.Navlink} 
+          to="/"
+          className={styles.Navlink}
         >
           Recentes
         </Link>

@@ -11,6 +11,12 @@
   box-shadow: -1px 10px 36px 21px rgba(0, 0, 0, 0.48);
 }
 
+.cardP:hover {
+  box-shadow: -1px 10px 36px 21px rgba(0, 0, 0, 0.48);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
 .data {
   text-align: end;
 }
@@ -54,6 +60,10 @@
 
 .imgFav {
   width: 2.1rem;
+}
+
+.imgFav:hover {
+  width: 2.5rem;
 }
 
 @media (max-width: 768px) {
