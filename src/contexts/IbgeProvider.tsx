@@ -8,7 +8,7 @@ type ibgeProviderProps = {
 }
 
 export function AppProvider({ children }: ibgeProviderProps ) {
-  const [apiData, setApiData] = useState<ibgeType[]>([]);
+  const [apiData, setApiData, ] = useState<ibgeType[]>([]);
   const [favorites, setFavorites] = useState<ibgeType[]>([]);
 
   useEffect(() => {

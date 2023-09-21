@@ -1,0 +1,39 @@
+
+header {
+  background-color: #0066FF;
+  border-radius: 15px;
+  color: white; 
+  padding: 10px; 
+  margin: 10px;
+  box-shadow: 4px 31px 58px -9px rgba(0, 0, 0, 0.48);
+}
+
+.nav {
+  display: flex; 
+  justify-content: space-around; 
+}
+
+NavLink , a {
+  text-decoration: none;
+  color: white; 
+  padding: 5px 10px; 
+  transition: color 0.3s; 
+  font-size: 2rem;
+  border-radius: 20px;
+  width: 15%;
+  text-align: center;
+}
+
+.nav:hover {
+  background-color: #004dc2;
+}
+
+@media (max-width: 768px) {
+  NavLink , a {
+  text-decoration: none;
+  color: white; 
+  padding: 5px 10px; 
+  transition: color 0.3s; 
+  font-size: 1.6rem;
+}
+}

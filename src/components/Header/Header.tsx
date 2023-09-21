@@ -5,9 +5,8 @@ function Header() {
 
   return (
     <div className={ style.header }>
-      <img className={ style.imag } src="" alt="logo gs news" />
       <h1 className={ style.gsnews }>GS NEWS</h1>
-      <div>
+      <div className={ style.link }>
         <Link target='_blank' to={'https://github.com/gsvirgilli'}>
           <img src="src/imgs/github.svg" alt="GitHub" />
         </Link>
