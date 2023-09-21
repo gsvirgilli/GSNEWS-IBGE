@@ -1,9 +1,21 @@
+import { Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout/Layout'
+import Recentes from './components/Recentes/Recentes'
+import Release from './components/Release/Release'
+import Favorites from './components/Favorites/Favorites'
+import Notfound from './components/NotFound/NotFound'
 import './App.css'
-import Header from './components/Header/Header'
 
 function App() {
   return (
-    <Header />
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Recentes />} />
+        <Route path="/release" element={<Release />} />
+        <Route path="/favorites" element={<Favorites />} />
+      </Route>
+      <Route path='/*' element={<Notfound />} />
+    </Routes>
   )
 }
 
