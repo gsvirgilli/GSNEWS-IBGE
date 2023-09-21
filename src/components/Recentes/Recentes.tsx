@@ -6,7 +6,7 @@ import calcularDiasPassadosComTexto from "../../services/data";
 function Recentes() {
   const { apiData, toggleFavorite, favorites } = useIBGE();
 
-  const dataApi = apiData.filter((arr, index) => index > 0);
+  const dataApi = apiData.slice(1);
 
   return (
     <>
