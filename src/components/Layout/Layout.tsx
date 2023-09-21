@@ -4,6 +4,8 @@ import { useIBGE } from "../../contexts/ibgeContext";
 import NavBar from "../NavBar/NavBar";
 import style from "./Layout.module.css";
 import calcularDiasPassadosComTexto from "../../services/data";
+import heart2 from "../../imgs/heart2.svg";
+import heart from "../../imgs/heart.svg";
 
 function Layout() {
   const { apiData, toggleFavorite, favorites } = useIBGE();
@@ -33,7 +35,7 @@ function Layout() {
           <button
             onClick={() => toggleFavorite(apiData[0])}
           >
-            <img className={style.smile} src={favorites.some((favorite) => favorite.id === apiData[0].id) ? "src/imgs/heart (3).svg" : "src/imgs/heart.svg"} alt="Favoritos" />
+            <img className={style.smile} src={favorites.some((favorite) => favorite.id === apiData[0].id) ? heart2 : heart} alt="Favoritos" />
           </button>
         </div>
       </div>

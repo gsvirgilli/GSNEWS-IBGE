@@ -1,5 +1,7 @@
 import style from './Header.module.css';
 import { Link } from 'react-router-dom';
+import linkedin from '../../imgs/linkedin.svg';
+import github from '../../imgs/github.svg';
 
 function Header() {
 
@@ -8,10 +10,10 @@ function Header() {
       <h1 className={ style.gsnews }>GS NEWS</h1>
       <div className={ style.link }>
         <Link target='_blank' to={'https://github.com/gsvirgilli'}>
-          <img src="src/imgs/github.svg" alt="GitHub" />
+          <img src={github} alt="GitHub" />
         </Link>
         <Link target='_blank' to={'https://www.linkedin.com/in/gsvirgilli/'}>
-          <img src="src/imgs/linkedin.svg" alt="LinkedIn" />
+          <img src={linkedin} alt="LinkedIn" />
         </Link>
       </div>
     </div>

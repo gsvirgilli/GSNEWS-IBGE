@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useIBGE } from "../../contexts/ibgeContext";
 import style from "./Favorites.module.css";
 import calcularDiasPassadosComTexto from "../../services/data";
+import heart2 from "../../imgs/heart2.svg";
+import heart from "../../imgs/heart.svg";
 
 function Favorites() {
   const { favorites, toggleFavorite } = useIBGE();
@@ -17,7 +19,7 @@ function Favorites() {
               <Link className={style.noti} target='_black' to={ibge.link}>Mais...</Link>
               <button
                 onClick={() => toggleFavorite(ibge)}
-              ><img className={style.imgFav} src={favorites.some((favorite) => favorite.id === ibge.id) ? "src/imgs/heart (3).svg" : "src/imgs/heart.svg"} alt="Favoritos" /></button>
+              ><img className={style.imgFav} src={favorites.some((favorite) => favorite.id === ibge.id) ? heart2 : heart } alt="Favoritos" /></button>
             </div>
           </div>
         ))}
