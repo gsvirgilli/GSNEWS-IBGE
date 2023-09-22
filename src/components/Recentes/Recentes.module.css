@@ -21,6 +21,18 @@
   text-align: end;
 }
 
+.fotoIntro {
+  display: flex;
+}
+
+.fotoimg {
+  padding: 10px;
+  width: 25vw;
+  height: 50%;
+  border-radius: 5px;
+  box-shadow: -1px 10px 300px 10px rgba(0, 0, 0, 0.48);
+}
+
 .links {
   display: flex;
   flex-flow: row;
@@ -41,7 +53,7 @@
   background-color: rgb(60, 54, 237);
   box-shadow: 2px 37px 34px -4px rgba(23, 23, 23, 0.24);
   padding: 0;
-  width: 16vw;
+  width: 10vw;
   font-size: 1.5rem;
 }
 
@@ -51,11 +63,13 @@
 
 .imIn {
   margin-bottom: 10px;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
+  padding: 10px;
 }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin: 15px;
 }
 
 .imgFav {
@@ -72,26 +86,32 @@
     }
 
     .noti {
-      font-style: normal;
+    display: flex;
+    flex-flow: column;
+    width: 35vw;
+    font-size: 1.4rem;
+    height: 40px;
+  }
+
+    .fotoIntro {
       display: flex;
       flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      border-radius: 5px;
-      background-color: rgb(60, 54, 237);
-      box-shadow: 2px 37px 34px -4px rgba(23, 23, 23, 0.24);
-      padding: 0;
-      width: 55vw;
-      font-size: 1.5rem;
     }
 
     .imIn {
       margin-bottom: 10px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .titulo {
-      font-size: 2.4rem;
+      font-size: 2rem;
+    }
+
+    .fotoimg {
+      width: 95%;
+    }
+
+    .imgFav {
+      width: 2rem;
     }
 }
