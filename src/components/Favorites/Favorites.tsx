@@ -11,8 +11,7 @@ function Favorites() {
 
   return (
     <>
-      {favorites.map((ibge) => (
-
+      {favorites.map((ibge) => ( 
         <div className={style.cardP} key={ibge.id}>
           <h3 className={style.titulo}>{ibge.titulo}</h3>
           <div className={style.fotoIntro}>

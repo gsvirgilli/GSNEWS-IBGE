@@ -33,3 +33,12 @@ a {
 button {
   font-family: 'Oswald', sans-serif;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    background: url('./imgs/wave-haikei1.svg') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
