@@ -4,6 +4,7 @@
 }
 
 body {
+  width: 100%;
   background: url('./imgs/wave-haikei.svg') no-repeat center center fixed;
   background-size: cover;
 }
