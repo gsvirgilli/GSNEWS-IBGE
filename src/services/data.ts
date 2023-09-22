@@ -1,5 +1,4 @@
 function calcularDiasPassadosComTexto(dataInicioString: string) {
-  // Converte a data de início no formato "DD/MM/YYYY HH:mm:ss" em milissegundos
   const partesDataHora = dataInicioString.split(' ');
   const [dataPartes, horaPartes] = partesDataHora;
   const [dia, mes, ano] = dataPartes.split('/').map(Number);
@@ -8,12 +7,17 @@ function calcularDiasPassadosComTexto(dataInicioString: string) {
 
   const dataAtual = new Date();
 
-  // Calcula a diferença em milissegundos e converte para dias
   const diferencaEmMilissegundos = dataAtual.getTime() - dataInicio;
   const diasPassados = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60 * 24));
 
-  return `${diasPassados} dias atrás`;
+  if (diasPassados < 1) {
+    const horasPassadas = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60));
+    return `${horasPassadas} hora${horasPassadas !== 1 ? 's' : ''} atrás`;
+  } else if (diasPassados === 1) {
+    return '1 dia atrás';
+  } else {
+    return `${diasPassados} dias atrás`;
+  }
 }
-
 
 export default calcularDiasPassadosComTexto;

@@ -4,23 +4,32 @@
 }
 
 body {
+  width: 100%;
   background: url('./imgs/wave-haikei.svg') no-repeat center center fixed;
   background-size: cover;
 }
 
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  font-family: 'Oswald', sans-serif;
+}
+
+button {
+  font-family: 'Oswald', sans-serif;
 }

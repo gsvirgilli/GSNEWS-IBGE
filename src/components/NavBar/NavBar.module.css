@@ -1,5 +1,5 @@
-
 header {
+  width: 70%;
   background-color: #0066FF;
   border-radius: 15px;
   color: white; 
@@ -8,12 +8,23 @@ header {
   box-shadow: 4px 31px 58px -9px rgba(0, 0, 0, 0.48);
 }
 
-.nav {
-  display: flex; 
-  justify-content: space-around; 
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-NavLink , a {
+.nav {
+  display: flex; 
+  width: 100%; 
+}
+
+.nav a {
+  width: 100%;
+}
+
+
+a {
   text-decoration: none;
   color: white; 
   padding: 5px 10px; 
@@ -24,16 +35,28 @@ NavLink , a {
   text-align: center;
 }
 
-.nav:hover {
-  background-color: #004dc2;
+.nav a:hover {
+  box-shadow: -1px 10px 36px 21px rgba(0, 0, 0, 0.48);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
-  NavLink , a {
+  header {
+    width: 100%;
+  }
+
+  a {
   text-decoration: none;
   color: white; 
   padding: 5px 10px; 
   transition: color 0.3s; 
   font-size: 1.6rem;
-}
+  }
+
+  .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }
