@@ -14,10 +14,10 @@ function Release() {
   return (
     <>
         {dataRelease.map((ibge) => (
-          <div className={ style.cardP } key={ibge.id}>
-            <h3 className={style.titulo} >{ibge.titulo}</h3>
+          <div className={style.cardP} key={ibge.id}>
+            <h3 className={style.titulo}>{ibge.titulo}</h3>
             <div className={style.fotoIntro}>
-              <img className={ style.fotoimg} src={getImg(ibge.imagens)} alt="context" />
+              <img className={style.fotoimg} src={getImg(ibge.imagens)} alt="context" />
               <p className={style.imIn}>{ibge.introducao}</p>
             </div>
             <p className={style.data}>{calcularDiasPassadosComTexto(ibge.data_publicacao)}</p>
