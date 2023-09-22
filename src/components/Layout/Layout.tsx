@@ -4,8 +4,8 @@ import { useIBGE } from "../../contexts/ibgeContext";
 import NavBar from "../NavBar/NavBar";
 import style from "./Layout.module.css";
 import calcularDiasPassadosComTexto from "../../services/data";
-import heart2 from "../../imgs/heart2.svg";
-import heart from "../../imgs/heart.svg";
+import heart2 from "../../imgs/heart2.png";
+import heart from "../../imgs/heart.png";
 import getImg from "../../services/imag";
 
 function Layout() {

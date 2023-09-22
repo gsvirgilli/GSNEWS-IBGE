@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { useIBGE } from "../../contexts/ibgeContext";
 import style from "./Recentes.module.css";
 import calcularDiasPassadosComTexto from "../../services/data";
-import heart2 from "../../imgs/heart2.svg";
-import heart from "../../imgs/heart.svg";
+import heart2 from "../../imgs/heart2.png";
+import heart from "../../imgs/heart.png";
 import getImg from "../../services/imag";
 
 function Recentes() {
